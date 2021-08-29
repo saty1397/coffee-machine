@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dunzo.assingment.CoffeeMachineDemoAllSuccessfulTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-29T15:03:30" hostname="SATYAM" time="2.051">
+  <properties/>
+  <testcase name="testFourOutletsWithFourSuccessfulA" classname="dunzo.assingment.CoffeeMachineDemoAllSuccessfulTest" time="2.051"/>
+  <system-out><![CDATA[hot_coffee is prepared
+hot_tea is prepared
+black_tea is prepared
+green_tea is prepared
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
