@@ -32,4 +32,8 @@ public class Machine {
     public void setOutlets(int outlets) {
         this.outlets = outlets;
     }
+
+    public static void resetMachineInstance() {
+        machine = null;
+    }
 }

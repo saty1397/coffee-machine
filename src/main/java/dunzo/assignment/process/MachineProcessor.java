@@ -2,6 +2,7 @@ package dunzo.assignment.process;
 
 import dunzo.assignment.model.Machine;
 import dunzo.assignment.store.BeverageList;
+import dunzo.assignment.store.InventoryStore;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -33,6 +34,9 @@ public class MachineProcessor {
     }
 
     public void reset() {
+        InventoryStore.resetInventoryStoreInstance();
+        BeverageList.resetBeverageListInstance();
+        Machine.resetMachineInstance();
         pool.shutdown();
     }
 }

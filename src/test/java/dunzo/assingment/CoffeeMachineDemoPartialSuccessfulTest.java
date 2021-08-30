@@ -24,10 +24,10 @@ public class CoffeeMachineDemoPartialSuccessfulTest {
         String data = readFileAsString(scriptPath);
         IOProcessor.JSONProcessor(data);
         MachineProcessor.getMachineProcessorInstance().process();
-        MachineProcessor.getMachineProcessorInstance().reset();
         //Waiting for the process to complete. A hack.
         Thread.sleep(2000);
         Assert.assertEquals(2,InventoryStore.getInventoryStoreInstance().getServedBeverages().size());
         Assert.assertEquals(2,InventoryStore.getInventoryStoreInstance().getRejectedBeverages().size());
+        MachineProcessor.getMachineProcessorInstance().reset();
     }
 }

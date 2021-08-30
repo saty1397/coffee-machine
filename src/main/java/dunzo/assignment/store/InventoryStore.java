@@ -24,6 +24,10 @@ public class InventoryStore {
         return  inventoryStore;
     }
 
+    public static void resetInventoryStoreInstance() {
+        inventoryStore = new InventoryStore();
+    }
+
     private InventoryStore() {
 
     }

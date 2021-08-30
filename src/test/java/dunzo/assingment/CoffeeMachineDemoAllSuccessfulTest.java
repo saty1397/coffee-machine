@@ -22,10 +22,10 @@ public class CoffeeMachineDemoAllSuccessfulTest {
         String data = readFileAsString(scriptPath);
         IOProcessor.JSONProcessor(data);
         MachineProcessor.getMachineProcessorInstance().process();
-        MachineProcessor.getMachineProcessorInstance().reset();
         //Waiting for the process to complete. A hack.
         Thread.sleep(2000);
         Assert.assertEquals(4, InventoryStore.getInventoryStoreInstance().getServedBeverages().size());
         Assert.assertEquals(0,InventoryStore.getInventoryStoreInstance().getRejectedBeverages().size());
+        MachineProcessor.getMachineProcessorInstance().reset();
     }
 }

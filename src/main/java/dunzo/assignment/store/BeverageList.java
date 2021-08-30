@@ -16,6 +16,10 @@ public class BeverageList {
         return beverageList;
     }
 
+    public static void resetBeverageListInstance() {
+        beverageList = new BeverageList();
+    }
+
     private BeverageList() {
     };
 
